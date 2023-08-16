@@ -56,3 +56,5 @@ def snapshot_numpy(snapshot):
 
 def test_np(snapshot_numpy):
     assert snapshot_numpy == np.array([1, 3]).tolist()
+    assert snapshot_numpy == np.array([1, 2.5]).tolist()
+    
