@@ -54,5 +54,5 @@ def snapshot_pandas(snapshot):
 
 
 def test_pd(snapshot_pandas):
-    data = [10,20,30,40,50,60]
+    data = [30,40,60]
     assert snapshot_pandas == pd.DataFrame(data, columns=['Numbers'])
